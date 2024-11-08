@@ -20,13 +20,24 @@ ShoppingList
 ## Description
 This is a shoppinglist webapp. This project serves as an example
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+To get this project running you need to follow these steps:
+
+1. Download zip and unzip the project
+2. make sure to have MySQL installed
+3. Go to Documents -> shoppinglist20241108.sql and run it
+4. make sure the database was created
+5. open shoppinglist-server with visual Studio 2022
+6. open appsettings.json and put ur own individual connection string for ur database
+7. Run the project with IIS Express
+8. open shoppinglist folder with visual studio code
+9. go to Extenstion and download "live-server"
+10. enable the extension, go to the app.js file and press on "go live" in the bottom right
+11. Everything should be working
 
 
 
 ## Project status
-ongoing
+finished
