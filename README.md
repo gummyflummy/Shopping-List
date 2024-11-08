@@ -1,14 +1,7 @@
-# BeispielwebprojektDazu
+# ShoppingList
 
 
 
-
-## Add your files
-
-cd existing_repo
-git remote add origin https://srv-gitlab-01.scip.local/dazu/beispielwebprojektdazu.git
-git branch -M main
-git push -uf origin main
 
 ***
 
