@@ -1,0 +1,79 @@
+
+.header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#btnDelete {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: var(--dark-grey); 
+    color: var(--white);
+    border: none;
+  
+}
+
+#btnAddList {
+    margin-left: 10px;
+    padding: 10px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: var(--dark-grey); 
+    color: var(--white); 
+    border: none;
+}
+
+#btnAddList:hover {
+    background-color: var(--light-grey);
+}
+
+.listsContainer {
+    padding: 10px;
+    background-color: var(--grey); 
+    
+}
+
+.listsContainer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--light-grey); 
+}
+
+.listItem span {
+    margin-right: 20px;
+}
+
+.listItem button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: var(--dark-grey); 
+    color: var(--white);
+    border: none;
+    padding: 5px 10px;
+}
+
+.listItem .btnOpen {
+    background-color: var(--dark-grey);
+}
+
+.listItem .btnOpen:hover {
+    background-color: var(--light-grey);
+}
+
+
+.listItem .btnDelete {
+    background-color: var(--dark-grey);
+}
+
+.listItem .btnDelete:hover {
+    background-color: #c82333; 
+}

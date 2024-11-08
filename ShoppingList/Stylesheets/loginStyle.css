@@ -1,0 +1,82 @@
+.mainHeader {
+    height: 10%;
+    width: 100%;
+    justify-content: right;
+}
+
+#switchToRegister {
+    text-decoration: none;
+    color: var(--white);
+    margin: 15px;
+}
+
+.siteInfo {
+    height: 10%;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.inputDivLogin {
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    margin: 20px;
+}
+
+::placeholder {
+    color: var(--light-grey);
+    opacity: 0.5;
+}
+
+.inputLogin {
+    height: 15%;
+    width: 80%;
+    text-align: left;
+    font-size: 15px;
+    color: var(--light-grey);
+    background-color: var(--white);
+    border: 0;
+    margin: 10px;
+}
+
+.errorMessage {
+    color: red;
+    display: none;
+}
+
+.loginBtnDiv {
+    height: 15%;
+    width: 25%;
+    margin: 20px;
+}
+
+#btnLogin {
+    height: 90%;
+    width: 90%;
+    font-size: 20px;
+    
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .siteInfo {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .siteInfo {
+        font-size: 30px;
+    }
+
+    .inputLogin {
+        font-size: 20px;
+    }
+
+    .loginBtnDiv {
+        height: 20%;
+        width: 50%;
+        margin: 20px;
+    }
+}

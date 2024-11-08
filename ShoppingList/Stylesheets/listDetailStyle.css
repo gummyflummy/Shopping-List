@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: var(--white);
+    background-color: var(--dark-grey);
+    font-family: 'Poppins', sans-serif;
+}
+
+.listHeader {
+    background-color: transparent;
+    color: var(--white);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listHeader h1 {
+    margin: 0;
+    font-size: 24px;
+    background-color: var(--grey);
+    padding: 10px;
+   
+}
+
+#btnAddProduct {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+#btnAddProduct:hover {
+    background-color: var(--light-grey);
+}
+
+.productsContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productsContainer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.productItem {
+    background-color: var(--grey);
+    padding: 10px;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+@media screen and (max-width: 600px) {
+    .listHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #btnAddProduct {
+        margin-top: 10px;
+    }
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+
+.popup-content {
+    background-color: var(--grey);
+    color: var(--white);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid var(--light-grey);
+    width: 450px;
+    max-width: 90%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+
+.close,
+.close-button {
+    color: var(--light-grey);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus,
+.close-button:hover,
+.close-button:focus {
+    color: var(--white);
+    text-decoration: none;
+}
+
+h2 {
+    margin: 0 0 15px 0;
+    color: var(--white);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: var(--white);
+}
+
+button[type="submit"] {
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    padding: 10px;
+    border: none;
+    margin-top: 5px;
+    background-color: var(--white);
+    color: var(--dark-grey);
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--light-grey);
+}
+
+
+.product-detail-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.product-detail-popup .popup-content {
+    background-color: var(--grey);
+    color: var(--white);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.product-detail-popup .popup-content img {
+    width: 100%;
+    max-height: 1px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+
+.product-detail-popup .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: var(--light-grey);
+    cursor: pointer;
+}
+.close-button:hover {
+    color: var(--white);
+}
+
+
+.product-detail-popup .popup-content img {
+    max-width: 100%;
+    max-height: 300px; 
+    object-fit: contain; 
+    margin-bottom: 20px;
+}
+
+.openDetailsBtn {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: var(--dark-grey); 
+    color: var(--white);
+    border: none;
+    padding: 5px 10px;
+}
+
+.deleteProductBtn {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: var(--dark-grey); 
+    color: var(--white);
+    border: none;
+    padding: 5px 10px;
+}
+
+.openDetailsBtn:hover {
+    background-color: var(--light-grey);
+}
+
+.deleteProductBtn:hover {
+    background-color: #c82333;
+}
+
+.productImage {
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 10px;
+}
